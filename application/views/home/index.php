@@ -1,10 +1,13 @@
   <?php //echo '<pre>';   print_r($records); exit(); ?>
-  <section class="clearfix">
+  <section id="video-wrpr" class="clearfix">
     <section class="video-wrpr">
-      <img src="<?php echo base_url(); ?>assets/img/video-bg.png">
+      <!-- <img src="<?php echo base_url(); ?>assets/img/video-bg.png"> -->
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/B8dOuqyVGew?autoplay=1&loop=0;rel-0&amp;showinfo0" frameborder="0" allowfullscreen></iframe>
+      </div>
       <div class="top-video-info">
         <div>
-          <div class="top-play-btn"><img src="<?php echo base_url(); ?>assets/img/video-play-btn.png"></div>
+          <!-- <div class="top-play-btn"><img src="<?php echo base_url(); ?>assets/img/video-play-btn.png"></div> -->
           <h2 class="top-video-title text-upppercase">the unsung heroes</h2>
           <div class="top-video-discrp">
             They practise their sport, day in and day out, without complain, without expectation <br class="hidden-small" />for a country that doesn’t even know they exist. Now, it’s time to show them we <br class="hidden-small"/>care. It’s time to make our voices heard. It’s time to say <span>#Garvhai</span>
@@ -39,14 +42,18 @@
               $lr="";
               $tb="";
               if(isset($records)){
+                
+
+
                 foreach($records as $playerData) { 
+                  if($count<=8){
                   switch ($count) {
                     case '1':
-                      $lr="20%";
+                      $lr="25%";
                       $tb="tl";                      
                       break;
                        case '2':
-                        $lr="40%";
+                        $lr="50%";
                         $tb="tl";                      
                       break;
                        case '3':
@@ -54,31 +61,23 @@
                       $tb="tr";                      
                       break;
                        case '4':
-                      $lr="20%";
+                      $lr="25%";
                       $tb="tr";                      
                       break;
                        case '5':
-                      $lr="40%";
-                      $tb="tr";                      
+                      $lr="25%";
+                      $tb="bl";                      
                       break;
                        case '6':
-                      $lr="20%";
+                      $lr="50%";
                       $tb="bl";                      
                       break;
                        case '7':
-                      $lr="40%";
-                      $tb="bl";                      
-                      break;
-                       case '8':
                       $lr="0";
-                      $tb="br";                      
-                      break;
-                       case '9':
-                      $lr="20%";
                       $tb="br";                      
                       break;                    
                     default:
-                     $lr="40%";
+                     $lr="25%";
                       $tb="br"; 
                       break;
                   }
@@ -107,6 +106,7 @@
                   </div>
                 <?php 
                   $count++;
+                   }
                 } 
               } ?>
               <div class="col-xs-40 col-xs-4 hero-detail-info hidden">
@@ -203,7 +203,7 @@
         </div>
       </div>      
     </section>
-    <section class="heros-gellary">
+    <section id="heros-gellary" class="heros-gellary">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 light-box-wrpr-fliter">
@@ -324,14 +324,13 @@
         </div>
       </div>      
     </section>
-    <section class="about-wrpr">
+    <section id="about" class="about-wrpr">
       <div class="about-inner">
-        <h2 class="about-title text-uppercase text-center">Our mission</h2>
-        <p class="about-discrb text-center">In a country that's brimming with potential, our sporting talent deserves much more support - both moral and financial. We need people cheering from the stands, we need facilities that enable our stars to perform at the top of their game. 
-At Adani, we have always believed in the power of sport in building the character of a nation and bringing it together. Which is why we felt it was our responsibility to do our bit for India on the biggest sporting stage of all - The Olympics. By supporting extremely talented sportspersons, we are working towards creating a sporting revolution in India. A revolution where each and every Indian stands up and proclaims - <span>#GarvHai</span></p>
+        <h2 class="about-title text-uppercase text-center">About Garv Hai</h2>
+        <p class="about-discrb text-center">"Sport has the power to build a better and stronger nation. Which is why we have started the <span>#GarvHai</span> initiative - a humble effort by us to support budding Olympians and bring glory to the nation. We chose athletes from all parts of India to assist them to qualify for the Games much before the Olympics begin. These men and women have fought the odds and made great sacrifices, all for one vision - to bring glory to India. We need you to stand up and say 'Garv Hai'!<br/> Join us, and together, let's make history."</p>
       </div>
     </section>
-    <section class="contact-wrpr">
+    <section id="contact" class="contact-wrpr">
       <h2 class="contact-title text-uppercase text-center">Share your experience</h2>
       <form class="contact-form clearfix">
         <div class="col-xs-12">
@@ -394,7 +393,7 @@ At Adani, we have always believed in the power of sport in building the characte
         </div>        
       </form>        
     </section>
-    <section class="players-schedule-wrpr">
+    <section id="media" class="players-schedule-wrpr">
       <div class="ply-schd-inner clearfix">
         <div class="row">
           <div class="col-sm-5 col-xs-12">

@@ -48,9 +48,12 @@
           <li class="text-uppercase"><a href="#">media</a></li>
           <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/adani.png"></a></li>
         </ul>
-        <nav class="main-nav">
+        <nav id="topNav" class="main-nav navbar-fixed-top">
           <ul class="nav navbar-nav">
-            <li class="logo-li"><a href="#">
+            <li class="hidden-small">
+              <a href="#"><img src="<?php echo base_url(); ?>assets/img/adani.png"></a>
+            </li> 
+            <li class="logo-li"><a href="#" data-href="#video-wrpr" class="page-scroll">
             <img src="<?php echo base_url(); ?>assets/img/logo.png" class="img-responsive">
           </a></li>
           <li class="search-wrpr-h search-wrpr-h-mob">
@@ -60,10 +63,11 @@
                 <label class="animate-label"></label>
               </form>
             </li>
-            <li ><a href="#" class="text-uppercase">players</a></li>
-            <li><a href="#" class="text-uppercase">upcoming talent</a></li>
-            <li><a href="#" class="text-uppercase">about</a></li>
-            <li><a href="#" class="text-uppercase">contact</a></li>
+            <li ><a href="#" data-href="#hero-wrpr" class="text-uppercase page-scroll">players</a></li>
+            <li><a href="#" data-href="#heros-gellary" class="text-uppercase page-scroll">upcoming talent</a></li>
+            <li><a href="#" data-href="#about" class="text-uppercase page-scroll">about</a></li>
+            <li><a href="#" data-href="#contact" class="text-uppercase page-scroll">contact</a></li>
+            <li><a href="#" data-href="#media" class="text-uppercase page-scroll">media</a></li>
             <li class="hidden-small search-wrpr-h">
               <form class="top-search-form">
                 <input type="text" class="search-inpt" placeholder="Search...">
@@ -71,9 +75,8 @@
                 <label class="animate-label"></label>
               </form>
             </li>
-            <li class="hidden-small">
-              <a href="#"><img src="<?php echo base_url(); ?>assets/img/adani.png"></a>
-            </li>           
+            <li class="socail-li"><a href="#"><img src="<?php echo base_url(); ?>assets/img/fb-b.png"></a></li>
+            <li class="socail-li"><a href="#"><img src="<?php echo base_url(); ?>assets/img/tw-b.png"></a></li>                      
           </ul>
         </nav>
       </section>

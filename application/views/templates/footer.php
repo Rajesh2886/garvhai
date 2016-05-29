@@ -22,20 +22,13 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="<?php echo base_url(); ?>assets/js/jquery-1.9.1.min.js"></script>
+     <script src="<?php echo base_url(); ?>assets/js/jquery.easing.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/custom.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
      
-      
-      $('.js--jumper').click(function(){ 
-
-       $("body, html").animate({
-                    scrollTop: $($(this).data('href')).offset().top-95
-                }, 600);
-
-            });
       var baseUrl = '<?php echo base_url() ?>';
       $(document).ready(function(){
         $('.close-overlay').click(function(){
